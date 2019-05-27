@@ -13,11 +13,11 @@ public class RunString
 		string = string.replaceAll("\\s", "");
 		
 		StringManagement metoda = new StringManagement(); 
-		metoda.duzinaStringa(string);
+		System.out.println("Duzina stringa iznosi " + metoda.duzinaStringa(string));
 		metoda.parniKarakteri(string);
 		metoda.neparniKarakteri(string);
-		metoda.brojUpperKaraktera(string);
-		metoda.brojLowerKaraktera(string);
+		System.out.println("\nU stringu ima " + metoda.brojUpperKaraktera(string) + " velikih slova. ");
+		System.out.println("\nU stringu ima " + metoda.brojLowerKaraktera(string) + " malih slova ");
 		metoda.ostaliKarakteri(string);
 		
 		unos.close();
